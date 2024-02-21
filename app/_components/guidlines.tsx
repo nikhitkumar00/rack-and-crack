@@ -16,8 +16,8 @@ const Guidelines = () => {
       </CustomText>
 
       <div className="mb-6 flex w-full flex-col gap-6 sm:mb-12 sm:items-start lg:mb-0">
-        {guidelines.map((text) => (
-          <CustomText description>
+        {guidelines.map((text, index) => (
+          <CustomText description key={index}>
             <div className="flex">
               <span className="block font-normal tracking-widest text-primary sm:inline">
                 ✺&nbsp;&nbsp;

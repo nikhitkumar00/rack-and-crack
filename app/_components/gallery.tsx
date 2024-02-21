@@ -1,49 +1,51 @@
-import Marquee from "react-fast-marquee";
-import Second from "@/public/gallery/2.png";
-import Third from "@/public/gallery/3.png";
-import Fourth from "@/public/gallery/4.png";
-import Fifth from "@/public/gallery/5.png";
-import Sixth from "@/public/gallery/6.png";
 import Image from "next/image";
-import Link from "next/link";
+import Marquee from "react-fast-marquee";
 
 const Gallery = () => {
   const images = [
     {
-      src: Fourth,
+      src: "/gallery/1.jpg",
       alt: "1",
     },
     {
-      src: Second,
+      src: "/gallery/2.jpg",
       alt: "2",
     },
     {
-      src: Third,
+      src: "/gallery/3.jpg",
       alt: "3",
     },
     {
-      src: Fourth,
+      src: "/gallery/4.jpg",
       alt: "4",
     },
     {
-      src: Fifth,
+      src: "/gallery/5.jpg",
       alt: "5",
     },
     {
-      src: Sixth,
+      src: "/gallery/6.jpg",
       alt: "6",
     },
     {
-      src: Third,
+      src: "/gallery/7.jpg",
       alt: "7",
     },
     {
-      src: Second,
+      src: "/gallery/8.jpg",
       alt: "8",
     },
     {
-      src: Fifth,
-      alt: "8",
+      src: "/gallery/9.jpg",
+      alt: "9",
+    },
+    {
+      src: "/gallery/10.jpg",
+      alt: "10",
+    },
+    {
+      src: "/gallery/11.jpg",
+      alt: "11",
     },
   ];
   return (
@@ -53,28 +55,19 @@ const Gallery = () => {
         <span className="text-tertiary">memories&nbsp;</span>we{" "}
         <span className="whitespace-nowrap">have created</span>
       </div>
-      <Marquee pauseOnHover className="z-0 p-10">
+      <Marquee pauseOnHover autoFill className="z-0 p-10 ">
         {images.map((image, index) => (
-          <div className="z-0 -ml-14 hover:z-10" key={index}>
+          <div className="h-48" key={index}>
             <Image
-              className="object-contain brightness-50 grayscale transition-all duration-200 ease-in hover:translate-x-[-20%] hover:scale-125 hover:brightness-100 hover:grayscale-0"
+              className="mx-3 h-full rounded object-cover grayscale transition-all duration-200 ease-in hover:scale-110 hover:grayscale-0"
               src={image.src}
               alt={image.alt}
               height={200}
+              width={300}
             />
           </div>
         ))}
       </Marquee>
-      <p className="font-tertiary text-sm font-semibold opacity-50 transition-all duration-200 ease-in hover:opacity-100 sm:text-lg">
-        The Previous Edition of{" "}
-        <Link
-          href="https://codedesignweek.netlify.app/designathon"
-          className="underline"
-          target="_blank"
-        >
-          DESIGNATHON by CODe
-        </Link>
-      </p>
     </div>
   );
 };
