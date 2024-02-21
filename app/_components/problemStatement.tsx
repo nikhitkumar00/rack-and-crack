@@ -34,7 +34,7 @@ const ProblemStatement = () => {
             </span>{" "}
             : {statement.qn}
           </div>
-          <div className="font-tertiary text-xl">{statement.ans}</div>
+          <div className="font-tertiary text-xl font-bold">{statement.ans}</div>
         </div>
       ))}
     </div>

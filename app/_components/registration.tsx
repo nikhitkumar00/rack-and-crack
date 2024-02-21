@@ -18,7 +18,7 @@ const Registration = () => {
       <div className="flex w-full items-center justify-center">
         <div className="z-10 flex w-full max-w-lg flex-col gap-6 md:pb-28 lg:ml-auto">
           <div className="w-full rounded-xl border border-primary bg-primary bg-opacity-15 px-6 py-3 text-center font-secondary text-lg text-primary sm:px-0 sm:text-xl md:text-2xl xl:text-3xl">
-            REGISTER FOR FREE
+            REGISTERATION
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <span className="flex flex-wrap font-secondary text-[5.5vw] lowercase tracking-wider text-white sm:py-1 sm:text-[5.7vw] md:text-[38px]">
@@ -26,21 +26,18 @@ const Registration = () => {
               <span className="whitespace-nowrap">closes on</span>
             </span>
             <span className="flex flex-wrap font-tertiary text-[5vw] font-medium tracking-wider text-white md:text-[64px]">
-              <span className="whitespace-nowrap">FEB 22,&nbsp;</span>
+              <span className="whitespace-nowrap">MAR 9,&nbsp;</span>
               <span>2024</span>
             </span>
           </div>
-          <Script defer async src="https://apply.devfolio.co/v2/sdk.js" />
-          <div className="relative flex h-[56px] w-full items-center justify-center overflow-clip rounded-xl bg-white">
-            <div className="absolute flex origin-center scale-75 items-center justify-center sm:relative sm:w-full sm:scale-100">
-              <div
-                className="apply-button"
-                data-hackathon-slug="designathon24"
-                data-button-theme="dark-inverted"
-                style={{ height: "44px" }}
-              ></div>
-            </div>
-          </div>
+          <button
+            onClick={() =>
+              window.open("https://forms.gle/8iPpCs3xeVsWq8gV8", "_blank")
+            }
+            className="w-full rounded-lg bg-primary px-6 py-3 font-secondary text-2xl text-dark hover:bg-tertiary md:text-3xl"
+          >
+            Register Now
+          </button>
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { About, Header, Hero } from "@/app/_components";
+import { About, Header, Hero, Registration } from "@/app/_components";
 import TextMarquee from "@/components/marquee";
 import SectionLayout from "@/layouts/section-layout";
 import Guidelines from "./_components/guidlines";
@@ -13,7 +13,6 @@ export default function Home() {
 
         <SectionLayout full gapless>
           <Hero />
-          <About />
         </SectionLayout>
         <TextMarquee />
 
@@ -21,6 +20,10 @@ export default function Home() {
           <Guidelines />
         </SectionLayout>
       </div>
+
+      <SectionLayout>
+        <Registration />
+      </SectionLayout>
 
       <SectionLayout>
         <ProblemStatement />
