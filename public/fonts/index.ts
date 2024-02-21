@@ -1,6 +1,13 @@
 import localFont from "next/font/local";
 import { Turret_Road } from "next/font/google";
 
+export const cutoutCity = localFont({
+  src: "./cutoutCity.ttf",
+  display: "swap",
+  fallback: ["Garamond, serif", "Times New Roman, serif"],
+  variable: "--font-cutout-city",
+});
+
 export const turretRoad = Turret_Road({
   weight: ["200", "300", "400", "500", "700", "800"],
   subsets: ["latin"],
@@ -14,11 +21,4 @@ export const cakra = localFont({
   display: "swap",
   fallback: ["Garamond, serif", "Times New Roman, serif"],
   variable: "--font-cakra",
-});
-
-export const amberyGarden = localFont({
-  src: "./amberyGarden.ttf",
-  display: "swap",
-  fallback: ["Garamond, serif", "Times New Roman, serif"],
-  variable: "--font-amberyGarden",
 });

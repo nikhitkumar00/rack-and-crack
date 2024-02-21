@@ -12,6 +12,7 @@ import SectionLayout from "@/layouts/section-layout";
 import Sponsors from "./_components/sponsor";
 import Gallery from "./_components/gallery";
 import Faq from "./_components/faq";
+import Guidelines from "./_components/guidlines";
 
 export default function Home() {
   return (
@@ -22,6 +23,10 @@ export default function Home() {
         <SectionLayout full gapless>
           <Hero />
           <About />
+        </SectionLayout>
+
+        <SectionLayout>
+          <Guidelines />
         </SectionLayout>
       </div>
 

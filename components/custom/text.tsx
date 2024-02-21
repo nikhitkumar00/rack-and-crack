@@ -41,7 +41,7 @@ const CustomText: React.FC<CustomTextProps> = ({
       "text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:max-w-[95%] xl:max-w-[80%] leading-tight tracking-wide lowercase flex flex-wrap text-white";
   else if (highlightedTitle)
     baseClassName +=
-      "text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:max-w-[95%] xl:max-w-[80%] leading-tight tracking-wide lowercase flex flex-wrap text-secondary whitespace-nowrap";
+      "text-3xl sm:text-4xl md:text-5xl lg:text-6xl lg:max-w-[95%] xl:max-w-[80%] leading-tight tracking-wide lowercase flex flex-wrap text-primary whitespace-nowrap";
   else if (description)
     baseClassName += "text-md md:text-xl lg:text-2xl text-justify text-white";
   else if (highlightedDescription)

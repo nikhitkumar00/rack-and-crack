@@ -24,7 +24,7 @@ const config: Config = {
         dark: "#030402",
       },
       fontFamily: {
-        primary: ["var(--font-amberyGarden)"],
+        primary: ["var(--font-cutout-city)"],
         secondary: ["var(--font-cakra)"],
         tertiary: ["var(--font-turret-road)"],
       },
