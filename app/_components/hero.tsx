@@ -8,9 +8,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center gap-12">
           <div className="flex flex-col">
             <span className="text-center font-tertiary text-3xl font-extrabold text-white">
-              28
-              <span className="text-tertiary">&nbsp;&</span>
-              &nbsp;29 FEB,&nbsp;
+              9 MAR,&nbsp;
               <span className="text-tertiary">2024</span>
             </span>
 
@@ -23,24 +21,16 @@ const Hero = () => {
               className="my-16"
             />
 
-            <span className="text-center font-secondary text-2xl lowercase tracking-wider text-primary">
+            {/* <span className="text-center font-secondary text-2xl lowercase tracking-wider text-primary">
               BIGGER<span className="text-secondary">.&nbsp;</span>GRANDER
               <span className="text-secondary">.&nbsp;</span>WILDER
               <span className="text-secondary">.</span>
-            </span>
+            </span> */}
           </div>
           <div className="flex flex-wrap justify-evenly gap-4">
             <div className="flex flex-col px-2 text-center">
               <p className="font-tertiary text-6xl font-extrabold text-tertiary">
-                12
-              </p>
-              <p className="font-secondary text-xl lowercase text-white md:text-2xl">
-                Hours
-              </p>
-            </div>
-            <div className="flex flex-col px-2 text-center">
-              <p className="font-tertiary text-6xl font-extrabold text-tertiary">
-                18k
+                55k
               </p>
               <p className="font-secondary text-xl lowercase text-white md:text-2xl">
                 Prizepool
@@ -48,14 +38,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        {/* <Image
-          src="/images/hero-img.png"
-          width={1047}
-          height={960}
-          alt="Designathon Image"
-          priority
-          className="h-auto w-full max-w-96 px-2 md:w-[50%] md:max-w-none xl:w-[60%] xl:max-w-[960px]"
-        /> */}
       </div>
     </div>
   );
