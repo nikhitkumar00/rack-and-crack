@@ -14,7 +14,7 @@ const TextMarquee = () => {
         height={8}
         alt="Dot"
         priority
-        className="m-3"
+        className="m-3 fill-dark"
       />
       <span>Rack and Crack</span>
     </Marquee>

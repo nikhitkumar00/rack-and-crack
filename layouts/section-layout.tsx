@@ -10,9 +10,9 @@ interface SectionProps {
   full?: boolean;
   float?: boolean;
   explorable?: boolean;
-  navigate?: string;
   noanimation?: boolean;
   gapless?: boolean;
+  hero?: boolean;
 }
 
 const SectionLayout = ({
@@ -20,9 +20,9 @@ const SectionLayout = ({
   full = false,
   float = false,
   explorable = false,
-  navigate = "",
   noanimation = true,
   gapless = false,
+  hero = false,
 }: SectionProps) => {
   return (
     <div
@@ -30,14 +30,16 @@ const SectionLayout = ({
         "overflow-clip border border-x-0 border-t-0 border-quarternary px-6 sm:px-12",
         {
           "fixed left-0 right-0 top-0 z-10": float,
+          "h-full": hero,
         },
       )}
     >
       <div
-        className={clsx("relative border border-y-0 border-quarternary", {
+        className={clsx("relative border border-y-0 border-quarternary ", {
           "px-6 py-12 sm:px-12 sm:py-20 lg:px-16 lg:py-24 xl:px-32 xl:py-32 2xl:px-48":
             !full,
           "pb-12": explorable,
+          "my-auto flex h-full items-center justify-center": hero,
         })}
       >
         <AnimatedSectionLayout
@@ -50,7 +52,7 @@ const SectionLayout = ({
             duration: 0.5,
           }}
         >
-          <div className={clsx({ "flex flex-col gap-24": !gapless })}>
+          <div className={clsx({ "bg-red flex flex-col gap-24": !gapless })}>
             {children}
           </div>
         </AnimatedSectionLayout>

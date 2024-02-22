@@ -4,11 +4,7 @@ import { CustomLink } from "@/components/custom";
 const Copyright = () => {
   return (
     <div className="relative flex min-h-16 items-center justify-center overflow-clip">
-      {/* <div className="absolute mt-2 md:mt-8">
-        <span className="text-stroke-white whitespace-nowrap font-primary text-8xl font-bold -tracking-widest text-transparent opacity-30 md:text-9xl">
-          designathon
-        </span>
-      </div> */}
+      
       <Header type="secondary" />
 
       <div className="absolute z-10">

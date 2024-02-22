@@ -9,12 +9,7 @@ export default function Home() {
   return (
     <>
       <div className="flex flex-col">
-        <Header />
-
-        <SectionLayout full gapless>
-          <Hero />
-        </SectionLayout>
-        <TextMarquee />
+        <Hero />
 
         <SectionLayout>
           <Guidelines />
