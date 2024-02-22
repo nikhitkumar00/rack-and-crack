@@ -81,37 +81,44 @@ const SocialConnect = () => {
     <SectionLayout full>
       <div className="flex flex-col overflow-clip lg:flex-row">
         <div className="z-10 flex flex-col items-center justify-center gap-6 border-r border-transparent px-6 py-6 lg:w-1/2 lg:flex-row lg:border-quarternary lg:p-12">
-          <div className="flex gap-4">
-            <CustomLink href="https://cce.edu.in">
-              <Image
-                src="/logos/cce-logo.png"
-                width={264}
-                height={264}
-                alt="Christ College of Engineering Logo"
-                priority
-                className="h-20 w-auto"
-              />
-            </CustomLink>
-            <CustomLink href="https://cce.edu.in/department/associations/2">
-              <Image
-                src="/logos/race-logo.png"
-                width={264}
-                height={264}
-                alt="Race Logo"
-                priority
-                className="aspect-square h-20 w-auto"
-              />
-            </CustomLink>
-            <CustomLink href="https://www.ieindia.org/webui/iei-home.aspx">
-              <Image
-                src="/logos/iei-logo.png"
-                width={264}
-                height={264}
-                alt="IEI Logo"
-                priority
-                className="h-20 w-auto"
-              />
-            </CustomLink>
+          <div className="flex gap-2 sm:gap-4">
+            <Image
+              src="/logos/cce-logo.png"
+              width={264}
+              height={264}
+              alt="Christ College of Engineering Logo"
+              priority
+              className="size-16 sm:size-20"
+              onClick={() => window.open("https://cce.edu.in", "_blank")}
+            />
+            <Image
+              src="/logos/race-logo.png"
+              width={264}
+              height={264}
+              alt="Race Logo"
+              priority
+              className="size-16 sm:size-20"
+              onClick={() =>
+                window.open(
+                  "https://cce.edu.in/department/associations/2",
+                  "_blank",
+                )
+              }
+            />
+            <Image
+              src="/logos/iei-logo.png"
+              width={264}
+              height={264}
+              alt="IEI Logo"
+              priority
+              className="size-16 sm:size-20"
+              onClick={() =>
+                window.open(
+                  "https://www.ieindia.org/webui/iei-home.aspx",
+                  "_blank",
+                )
+              }
+            />
           </div>
 
           <Image
@@ -120,18 +127,16 @@ const SocialConnect = () => {
             height={264}
             alt="Connect Icon"
             priority
-            className="h-6 w-auto"
+            className="size-3 sm:size-6"
           />
-          {/* <CustomLink href="https://techletics-24.vercel.app"> */}
           <Image
             src="/logos/techletics-logo.svg"
             width={264}
             height={264}
             alt="Techletics Logo"
             priority
-            className="h-20 w-auto"
+            className="size-16 sm:size-20"
           />
-          {/* </CustomLink> */}
         </div>
 
         {/* Right Section */}
