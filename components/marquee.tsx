@@ -6,7 +6,7 @@ const TextMarquee = () => {
   return (
     <Marquee
       autoFill
-      className="bg-primary p-3 font-secondary text-3xl text-dark"
+      className="bg-primary p-3 font-secondary text-3xl lowercase tracking-wider text-dark"
     >
       <Image
         src="/icons/dot.svg"
@@ -16,7 +16,7 @@ const TextMarquee = () => {
         priority
         className="m-3 fill-dark"
       />
-      <span>Rack and Crack</span>
+      <span className="px-2">Rack and Crack</span>
     </Marquee>
   );
 };

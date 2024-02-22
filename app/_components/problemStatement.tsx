@@ -29,15 +29,17 @@ const ProblemStatement = () => {
         Problem Statements
       </CustomText>
       {problemStatements.map((statement, index) => (
-        <div key={index} className="flex flex-col gap-4 py-8">
-          <div className="flex flex-col font-secondary text-2xl md:text-3xl">
+        <div key={index} className="flex flex-col gap-4 pt-10">
+          <div className="flex flex-col gap-1 font-secondary text-2xl md:text-3xl">
             <span className="font-tertiary text-xl text-secondary md:text-2xl">
               Problem{" "}
               <span className="whitespace-nowrap">Statement {index + 1}:</span>
             </span>
             <span>{statement.qn}</span>
           </div>
-          <CustomText description>{statement.ans}</CustomText>
+          <CustomText description>
+            <span className="opacity-85">{statement.ans}</span>
+          </CustomText>
         </div>
       ))}
     </div>

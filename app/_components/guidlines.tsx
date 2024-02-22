@@ -10,7 +10,7 @@ const Guidelines = () => {
     "Decision of the judges will be final",
   ];
   return (
-    <div className="flex w-full flex-col items-start justify-center gap-12 py-6 font-primary text-secondary lg:py-12">
+    <div className="flex w-full flex-col items-start justify-center gap-12 font-primary text-secondary">
       <CustomText title>
         RULES AND&nbsp;<CustomText highlightedTitle>Regulations</CustomText>
       </CustomText>
@@ -19,10 +19,10 @@ const Guidelines = () => {
         {guidelines.map((text, index) => (
           <CustomText description key={index}>
             <div className="flex">
-              <span className="block font-normal tracking-widest text-primary sm:inline">
+              <span className="block tracking-widest text-primary sm:inline">
                 ✺&nbsp;&nbsp;
               </span>
-              <p className="text-xl font-semibold">{text}</p>
+              <span className="font-semibold">{text}</span>
             </div>
           </CustomText>
         ))}

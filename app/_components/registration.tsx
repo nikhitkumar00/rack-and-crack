@@ -1,55 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import Script from "next/script";
-
 const Registration = () => {
   return (
-    // <div className="flex w-full flex-wrap items-center justify-between gap-6 pb-6 pt-0 sm:pt-8 md:-mb-12 md:mt-12 md:pb-8 xl:pb-4">
-    //   <Image
-    //     src="/images/faq.png"
-    //     alt="Registration Image"
-    //     width={1313}
-    //     height={960}
-    //     priority
-    //     className="relative bottom-0 left-0 z-10 w-full max-w-xl md:absolute md:opacity-30 lg:opacity-15 xl:opacity-95 2xl:opacity-100"
-    //   />
-
-    //   <div className="flex w-full items-center justify-center">
-    //     <div className="z-10 flex w-full max-w-lg flex-col gap-6 md:pb-28 lg:ml-auto">
-    //       <div className="w-full rounded-xl border border-primary bg-primary bg-opacity-15 px-6 py-3 text-center font-secondary text-lg text-primary sm:px-0 sm:text-xl md:text-2xl xl:text-3xl">
-    //         REGISTERATION
-    //       </div>
-    //       <div className="flex flex-col items-center justify-center gap-2">
-    //         <span className="flex flex-wrap font-secondary text-[5.5vw] lowercase tracking-wider text-white sm:py-1 sm:text-[5.7vw] md:text-[38px]">
-    //           Application&nbsp;
-    //           <span className="whitespace-nowrap">closes on</span>
-    //         </span>
-    //         <span className="flex flex-wrap font-tertiary text-[5vw] font-medium tracking-wider text-white md:text-[64px]">
-    //           <span className="whitespace-nowrap">MAR 9,&nbsp;</span>
-    //           <span>2024</span>
-    //         </span>
-    //       </div>
-    //       <button
-    //         onClick={() =>
-    //           window.open("https://forms.gle/8iPpCs3xeVsWq8gV8", "_blank")
-    //         }
-    //         className="w-full rounded-lg bg-primary px-6 py-3 font-secondary text-2xl text-dark hover:bg-tertiary md:text-3xl"
-    //       >
-    //         Register Now
-    //       </button>
-    //     </div>
-    //   </div>
-    // </div>
-
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col justify-center gap-12 md:flex-row md:justify-between">
       <Image
-        src="/images/faq.png"
-        alt="Registration Image"
-        width={1313}
-        height={960}
+        src="/images/poster.jpg"
+        alt="Poster"
+        width={640}
+        height={640}
         priority
-        className="w-full max-w-xl"
+        className="mx-auto h-auto w-[60vw] max-w-72 object-contain lg:max-w-96"
       />
 
       <div className="flex w-full items-center justify-center">
@@ -63,7 +24,7 @@ const Registration = () => {
               <span className="whitespace-nowrap">closes on</span>
             </span>
             <span className="flex flex-wrap font-tertiary text-[5vw] font-medium tracking-wider text-white md:text-[64px]">
-              <span className="whitespace-nowrap">MAR 9,&nbsp;</span>
+              <span className="whitespace-nowrap">FEB 25,&nbsp;</span>
               <span>2024</span>
             </span>
           </div>
@@ -71,7 +32,7 @@ const Registration = () => {
             onClick={() =>
               window.open("https://forms.gle/8iPpCs3xeVsWq8gV8", "_blank")
             }
-            className="w-full rounded-lg bg-primary px-6 py-3 font-secondary text-2xl text-dark hover:bg-tertiary md:text-3xl"
+            className="w-full rounded-lg bg-primary px-6 py-3 font-secondary text-lg text-dark hover:bg-tertiary sm:text-xl md:text-2xl xl:text-3xl"
           >
             Register Now
           </button>

@@ -1,4 +1,3 @@
-import { CustomText } from "@/components/custom";
 import TextMarquee from "@/components/marquee";
 import SectionLayout from "@/layouts/section-layout";
 import Image from "next/image";
@@ -13,7 +12,7 @@ const Hero = () => {
           <div className="flex flex-col gap-3 md:gap-6">
             <span className="text-center font-tertiary text-xl font-extrabold text-white md:text-3xl">
               9 MAR,&nbsp;
-              <span className="text-tertiary">2024</span>
+              <span className="text-primary">2024</span>
             </span>
             <Image
               src="/logos/rack-and-crack.svg"
@@ -23,10 +22,13 @@ const Hero = () => {
               priority
               className="min-w-64 px-4"
             />
+            <span className="text-center font-secondary text-xl lowercase text-white md:text-2xl">
+              IDEA PITCHING COMPETITION
+            </span>
           </div>
 
           <div className="flex flex-col px-2 text-center">
-            <p className="font-tertiary text-7xl font-extrabold text-tertiary">
+            <p className="font-tertiary text-7xl font-extrabold text-primary">
               55k
             </p>
             <p className="font-secondary text-xl lowercase text-white md:text-2xl">
