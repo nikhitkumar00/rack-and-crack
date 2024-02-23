@@ -1,4 +1,4 @@
-import { About, Hero, Registration } from "@/app/_components";
+import { Hero, Registration } from "@/app/_components";
 import SectionLayout from "@/layouts/section-layout";
 import Guidelines from "./_components/guidlines";
 import ProblemStatement from "./_components/problemStatement";
@@ -8,9 +8,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <SectionLayout full>
-        <About />
-      </SectionLayout>
 
       <SectionLayout>
         <Guidelines />
