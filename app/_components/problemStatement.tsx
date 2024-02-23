@@ -25,13 +25,13 @@ const ProblemStatement = () => {
   ];
   return (
     <div className="z-10">
-      <CustomText highlightedTitle className="mb-6">
+      <CustomText highlightedTitle className="mb-6 text-wrap">
         Problem Statements
       </CustomText>
       {problemStatements.map((statement, index) => (
         <div key={index} className="flex flex-col gap-4 pt-10">
           <div className="flex flex-col gap-1 font-secondary text-2xl md:text-3xl">
-            <span className="font-tertiary text-xl text-[#fb7185] md:text-2xl">
+            <span className="font-tertiary text-xl text-primary md:text-2xl">
               Problem{" "}
               <span className="whitespace-nowrap">Statement {index + 1}:</span>
             </span>
