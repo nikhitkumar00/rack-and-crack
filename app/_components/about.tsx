@@ -3,23 +3,20 @@ import { CustomText } from "@/components/custom";
 const About = () => {
   return (
     <div className="flex flex-col gap-4 px-6 pb-12 pt-10 text-right font-secondary text-secondary sm:px-12 sm:pt-20 md:pb-16 lg:px-16 lg:pb-24 xl:px-32 2xl:px-48">
-      <CustomText title className="self-end">
+      <CustomText title>
         what is&nbsp;
-        <CustomText highlightedTitle>rack and crack</CustomText>?
+        <CustomText className="text-wrap text-left" highlightedTitle>
+          rack and crack
+        </CustomText>
+        ?
       </CustomText>
 
       <CustomText description>
-        An in-person action packed&nbsp;
-        <CustomText highlightedDescription>design hackathon&nbsp;</CustomText>
-        where students and aspiring designers are given a platform to experience
-        <CustomText highlightedDescription>
-          &nbsp;real-life design problems
-        </CustomText>
-        &nbsp;and master the art of creating&nbsp;
-        <CustomText highlightedDescription>
-          usable, viable, and empathetic design solutions
-        </CustomText>
-        &nbsp;while having a great deal of fun for 12 hours straight.
+        Rack and Crack intends to catalyze a mega solution for some major
+        dilemmas persisting in the field of Civil Engineering and Construction.
+        Hosted in one of the most bustling hubs in Kerala, this idea-pitching
+        contest is your finest shot at manifesting your problem-solving skills
+        out to the world.
       </CustomText>
     </div>
   );
